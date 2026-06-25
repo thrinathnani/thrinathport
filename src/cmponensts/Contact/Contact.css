@@ -1,0 +1,84 @@
+.contactSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+  }
+  
+  .line{
+    width: 70%;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #21BCFF 0.9%, #7C86FF 102.1%);
+  }
+  
+  .contactTitle{
+    text-align: center;
+    font-size: 2.8rem;
+    background: linear-gradient(90deg, #21BCFF 0.9%, #7C86FF 102.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .contactTitle::after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #21BCFF 0.9%, #7C86FF 102.1%);
+  }
+  
+  .contactDetails{
+    width: 70%;
+    padding: 40px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(33,188,255,0.12);
+  
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .contactDetails p{
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  
+  .contactDetails a{
+    color: #21BCFF;
+    text-decoration: none;
+  }
+  
+  .contactDetails a:hover{
+    color: #7C86FF;
+  }
+  
+  @media(max-width:768px){
+  
+    .contactDetails{
+      width: 90%;
+      padding: 25px;
+    }
+  
+    .contactDetails p{
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .contactTitle{
+      font-size: 2.2rem;
+    }
+  }

@@ -1,0 +1,39 @@
+.Nanii{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+  .Nanii img {
+    margin-top: 100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px ;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .Nanii img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  }
+  .Nanii h1{
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: 600;
+  }
+  .Nanii h1 span{
+    background: linear-gradient(#21BCFF 0.90%,#7C86FF 102.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Nanii p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  
